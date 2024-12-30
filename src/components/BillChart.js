@@ -17,7 +17,7 @@ const BillChart = ({ bills }) => {
   const sortedData = Object.values(chartData).sort((a, b) => a.month.localeCompare(b.month));
 
   return (
-    <ResponsiveContainer width="100%" height={300}>
+    <ResponsiveContainer width="100%" height={300} >
       <LineChart data={sortedData}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="month" />
